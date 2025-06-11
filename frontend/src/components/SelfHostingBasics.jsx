@@ -21,7 +21,7 @@ export default function SelfHostingBasics() {
             </ul>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">What should I make?</h2>
             <p className="text-xl text-white mb-4">
-                You can make anything you want. If you are having trouble coming up with an idea, try thinking about a problem you have or a service that you use that you would prefer to have control of. Stil can't think of any, feel free to take inspiration from the list above or visit <a href="https://awesome-selfhosted.net/" className="text-[#f9a535] hover:underline">awesome-selfhosted</a>, a list with a ton of self-hosted applications and projects.
+                You can make anything you want. If you are having trouble coming up with an idea, try thinking about a problem you have or a service that you use that you would prefer to have control of. Still can't think of any, feel free to take inspiration from the list above or visit <a href="https://awesome-selfhosted.net/" className="text-[#f9a535] hover:underline">awesome-selfhosted</a>, a list with a ton of self-hosted applications.
             </p>
         </div>
     )
