@@ -21,7 +21,7 @@ export default function GuideSideBar({ currentGuide }) {
                 >
                     {guide.title}
                 </Link>
-            ))}
+            ))}  
         </div>
     )
 }
