@@ -3,8 +3,8 @@ import React from 'react';
 export default function MakingYourProject() {
 
     return (
-        <div className="flex flex-col">
-            <h1 className="text-4xl text-[#f9a535] font-bold mt-16 mb-4">Making Your Project</h1>
+        <div className="flex flex-col h-full">
+            <h1 className="text-4xl text-[#f9a535] font-bold mb-4">Making Your Project</h1>
             <p className="text-xl text-white mb-4">
                 After you choose your project idea, it's time to start building! In this section, we'll cover the frontend, backend, and database components of your self-hosted application.
             </p>

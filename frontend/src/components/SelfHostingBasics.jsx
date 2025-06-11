@@ -3,8 +3,8 @@ import React from 'react';
 export default function SelfHostingBasics() {
 
     return (
-        <div className="flex flex-col">
-            <h1 className="text-4xl text-[#f9a535] font-bold mt-16 mb-4">Self-Hosting Basics</h1>
+        <div className="flex flex-col h-full">
+            <h1 className="text-4xl text-[#f9a535] font-bold mb-4">Self-Hosting Basics</h1>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">What is Self-Hosting?</h2>
             <p className="text-xl text-white mb-4">
                 Self-hosting is when you run/manage your own home server to host applications, increase of relying on third-party services. Self-hosting is preffered by many as it gives you control of your data and can often result in you saving money.

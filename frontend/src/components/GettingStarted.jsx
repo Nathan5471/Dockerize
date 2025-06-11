@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function GettingStarted() {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col h-full">
             <h1 className="text-4xl text-[#f9a535] font-bold mb-4">Getting Started</h1>
             <p className="text-xl text-white mb-4">
                 Welcome to the Getting Started guide! Here, you'll find all the information you need to kickstart your journey with Dockerize.
