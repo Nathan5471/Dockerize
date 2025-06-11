@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function MainPage() {
     return (
@@ -9,7 +10,7 @@ export default function MainPage() {
                 <h2 className="text-4xl text-[#f9a535] text-left mt-8">How it works</h2>
                 <ol className="list-decimal list-inside text-2xl text-white mt-4">
                     <li>You create an applicication with a frontend (website) and backend</li>
-                    <li>You write a Dockerfile to build your application (INSERT LINK TO GUIDE)</li>
+                    <li>You write a Dockerfile to build your application (<Link to="/guide">The Guide</Link>)</li>
                     <li>You submit your docker container with install instructions</li>
                     <li>You get your prize!</li>
                 </ol>
