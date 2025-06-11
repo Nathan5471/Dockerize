@@ -1,8 +1,14 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import MainPage from './pages/MainPage.jsx'
 
 function App() {
   return (
-    <p className="text-4xl">Dockerize</p>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </Router>
   )
 }
 
