@@ -15,7 +15,7 @@ export default function DockerBasics() {
             </p>
             <h3 className="text-2xl text-[#f9a535] font-semibold mb-2">Docker Compose (Reccomended)</h3>
             <p className="text-xl text-white mb-4">
-                Docker Compose is a tool that allows you to define and run multiple Docker applications in a single .yaml file. In the YAML file, you define your applications, then you can deploy all of them with a single command.
+                Docker Compose is a tool that allows you to define and run multiple Docker applications in a single .yaml file. In the YAML file, you define your applications, then you can deploy all of them with a single command. When you are in the same directory as the YAML file, run 'docker compose up' to start the applications in the file. Make you you have downloaded Docker Compose using the instructions in the <a href="https://docs.docker.com/compose/install/" className="text-[#f9a535] hover:underline">Docker documentation</a>.
             </p>
             <h3 className="text-2xl text-[#f9a535] font-semibold mb-2">Docker Run</h3>
             <p className="text-xl text-white mb-4">
