@@ -6,6 +6,7 @@ import SelfHostingBasics from '../components/SelfHostingBasics.jsx';
 import MakingYourProject from '../components/MakingYourProject.jsx';
 import DockerBasics from '../components/DockerBasics.jsx';
 import DockerfileGuide from '../components/DockerfileGuide.jsx';
+import SubmittingYourProject from '../components/SubmittingYourProject.jsx';
 
 export default function Guide() {
     const { guideId } = useParams();
@@ -20,6 +21,7 @@ export default function Guide() {
                 {guideId === 'makingYourProject' && <MakingYourProject />}
                 {guideId === 'dockerBasics' && <DockerBasics />}
                 {guideId === 'dockerfileGuide' && <DockerfileGuide />}
+                {guideId === 'submittingYourProject' && <SubmittingYourProject />}
             </div>
         </div>
     )

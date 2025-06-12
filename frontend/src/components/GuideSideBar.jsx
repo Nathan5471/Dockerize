@@ -8,6 +8,7 @@ export default function GuideSideBar({ currentGuide }) {
         { id: 'makingYourProject', title: 'Making Your Project'},
         { id: 'dockerBasics', title: 'Docker Basics' },
         { id: 'dockerfileGuide', title: 'Dockerfile Guide' },
+        { id: 'submittingYourProject', title: 'Submitting Your Project' },
     ]
 
     return (
