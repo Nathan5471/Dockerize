@@ -6,7 +6,7 @@ export default function MainPage() {
         <div className="flex items-center justify-center min-h-screen bg-[#f9a535]">
             <div className="flex flex-col ustify-ceneter bg-[#424241] p-8 w-[calc(75%)] my-10 rounded-lg shadow-lg">
                 <h1 className="text-6xl text-[#f9a535] text-center font-bold">Dockerize</h1>
-                <p className="text-2xl text-white text-center mt-4">You ship a full-stack self hosted application in a single Docker image, we ship you a home server to host it.</p>
+                <p className="text-2xl text-white text-center mt-4">You ship a full-stack self hosted application using Docker, we ship you a home server to host it.</p>
                 <div className="flex flex-row justify-center gap-2 mt-8">
                     <Link to="/guide" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">The Guide</Link>
                     <Link to="/submit" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Submit Your Project</Link>
