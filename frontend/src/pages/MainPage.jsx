@@ -28,17 +28,13 @@ export default function MainPage() {
                     <li>Your project needs to be self-hostable with clear Docker setup instructions</li>
                 </ul>
                 <h2 className="text-4xl text-[#f9a535] text-left mt-8">Prizes</h2>
-                <div className="text-2xl text-white mt-4 flex flex-row justify-around">
-                    <div className="text-center">
-                        <h3 className="text-3xl text-[#f9a535]">Raspberry Pi</h3>
-                        <p>Raspberry Pi 4 Model B 2GB</p>
-                        <p>10 Hour Requirement</p>
-                    </div>
+                <div className="text-2xl text-white mt-4 flex flex-row items-center justify-around">
                     <div className="text-center">
                         <h3 className="text-3xl text-[#f9a535]">ZimaBoard</h3>
                         <p>ZimaBoard 232</p>
                         <p>18 Hour Requirement</p>
                     </div>
+                    <img src="/zimaboardImage.jpg" alt="ZimaBoard 232" className="w-1/3 h-auto rounded-lg" />
                 </div>
             </div>
         </div>

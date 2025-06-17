@@ -15,7 +15,7 @@ export default function SubmittingYourProjct() {
                 The first step to submitting your project is to public it to Docker Hub. This is so everyone can easily download and run your project. You will need to create an account on <a href="https://hub.docker.com/" className="text-[#f9a535] hover:underline">Docker Hub</a> if you don't have one already. You can publish your app on Docker Hub by following these steps:
             </p>
             <ol className="list-decimal list-inside text-xl text-white mb-4">
-                <li>Run 'docker build -t MyAppName' in the same directory as your Dockerfile</li>
+                <li>Run 'docker build -t MyAppName .' in the same directory as your Dockerfile</li>
                 <li>Run 'docker tag MyAppName MyDockerHubUsername/MyAppName:latest'</li>
                 <li>Run 'docker push MyDockerHubUsername/MyAppName:latest</li>
             </ol>
@@ -36,7 +36,7 @@ services:
     restart: unless-stopped`}
             </SyntaxHighlighter></pre></code>
             <p className="text-lg text-white mb-4">
-                Make sure to save this file as <code>dockerCompose.yaml</code> in your GitHub repository. If you need help with a more advanced Docker compose file, ask in #dockerize on the Hack Club Slack. Finally, you can run 'docker compose up' in the same directory as your <code>dockerCompose.yaml</code> file to run your project.
+                Make sure to save this file as <code>docker-compose.yaml</code> in your GitHub repository. If you need help with a more advanced Docker compose file, ask in #dockerize on the Hack Club Slack. Finally, you can run 'docker compose up' in the same directory as your <code>docker-compose.yaml</code> file to run your project.
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">3. Submit your project</h2>
             <p className="text-xl text-white mb-4">

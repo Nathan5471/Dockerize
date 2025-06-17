@@ -15,7 +15,7 @@ export default function DockerfileGuide() {
                 A Dockerfile is a set of instructions that Docker uses to build an image of your application. These instructions are all of the commands that a user would use in the command line to build your application.
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">Creating a Dockerfile</h2>
-            <p className="text-lg text-white mb-4">Below is the Dockerfile for a React app that serves the frontend with the Express backend and SQLite for the database.</p>
+            <p className="text-lg text-white mb-4">You save your Dockerfile in a file called 'Dockerfile' with no extentions. Below is the Dockerfile for a React app that serves the frontend with the Express backend and SQLite for the database.</p>
             <code className="text-lg mb-4"><pre><SyntaxHighlighter language="dockerfile" style={a11yDark}>
                 {`FROM node:22 AS frontend // Or whatever version you want to use
 WORKDIR /app/frontend
@@ -24,6 +24,7 @@ RUN npm install
 COPY frontend/ ./
 RUN npm run build
 
+FROM node:22
 WORKDIR /app/backend
 COPY backend/package*.json ./
 RUN npm install
