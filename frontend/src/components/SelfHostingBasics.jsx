@@ -12,12 +12,12 @@ export default function SelfHostingBasics() {
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">Examples of self-hosted software</h2>
             <p className="text-xl text-white mb-4">Below are some of the most popular self-hosted applications:</p>
             <ul className="list-disc list-inside text-xl text-white mb-4">
-                <li><a href="https://jellyfin.org/" className="text-[#f9a535] hover:underline">Jellyfin</a> - A media server for streaming your own movies, TV shows, and music.</li>
-                <li><a href="https://pi-hole.net/" className="text-[#f9a535] hover:underline">Pi-hole</a> - A DNS server that blocks ads on your network.</li>
-                <li><a href="https://bitwarden.com/" className="text-[#f9a535] hover:underline">Bitwarden</a> - A password manager.</li>
-                <li><a href="https://docs.mealie.io/" className="text-[#f9a535] hover:underline">Mealie</a> - A recipe manager and meal planner</li>
-                <li><a href="https://caddyserver.com/" className="text-[#f9a535] hover:underline">Caddy</a> - A web server and reverse proxy that automatically manages SSL certificates.</li>
-                <li><a href="https://www.home-assistant.io/" className="text-[#f9a535] hover:underline">Home Assistant</a> - A home automation platform that focuses on privacy and local control.</li>
+                <li><a href="https://jellyfin.org/" target="_blank" className="text-[#f9a535] hover:underline">Jellyfin</a> - A media server for streaming your own movies, TV shows, and music.</li>
+                <li><a href="https://pi-hole.net/" target="_blank" className="text-[#f9a535] hover:underline">Pi-hole</a> - A DNS server that blocks ads on your network.</li>
+                <li><a href="https://bitwarden.com/" target="_blank" className="text-[#f9a535] hover:underline">Bitwarden</a> - A password manager.</li>
+                <li><a href="https://docs.mealie.io/" target="_blank" className="text-[#f9a535] hover:underline">Mealie</a> - A recipe manager and meal planner</li>
+                <li><a href="https://caddyserver.com/" target="_blank" className="text-[#f9a535] hover:underline">Caddy</a> - A web server and reverse proxy that automatically manages SSL certificates.</li>
+                <li><a href="https://www.home-assistant.io/" target="_blank" className="text-[#f9a535] hover:underline">Home Assistant</a> - A home automation platform that focuses on privacy and local control.</li>
             </ul>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">What should I make?</h2>
             <p className="text-xl text-white mb-4">

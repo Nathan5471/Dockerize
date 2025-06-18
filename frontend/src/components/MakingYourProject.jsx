@@ -10,7 +10,7 @@ export default function MakingYourProject() {
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">Frontend</h2>
             <p className="text-xl text-white mb-4">
-                The frontend will be a website that users can access to use your application. You can use any web framework you like, such as React or Vue.js. 
+                The frontend will be how the user access your applicationl. You could do a web interface, command line interface, or anything you would like. 
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">Backend</h2>
             <p className="text-xl text-white mb-4">

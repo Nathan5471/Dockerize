@@ -8,7 +8,7 @@ export default function DockerfileGuide() {
         <div className="flex flex-col h-full">
             <h1 className="text-4xl text-[#f9a535] font-bold mb-4">Dockerfile Guide</h1>
             <p className="text-xl text-white mb-4">
-                Now that you've made your project and learned the basics of Docker, it's time to build your app with a Dockerfile. This guide will show you how to create a Dockerfile for a React and Express app, if you need more information check out the <a href="https://docs.docker.com/reference/dockerfile/" className="text-[#f9a535] underline">Docker docs</a> for more information.
+                Now that you've made your project and learned the basics of Docker, it's time to build your app with a Dockerfile. This guide will show you how to create a Dockerfile for a React and Express app, if you need more information check out the <a href="https://docs.docker.com/reference/dockerfile/" target="_blank" className="text-[#f9a535] underline">Docker docs</a> for more information.
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">What is a Dockerfile?</h2>
             <p className="text-lg text-white mb-4">
