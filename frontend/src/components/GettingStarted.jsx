@@ -9,7 +9,7 @@ export default function GettingStarted() {
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">Join the Slack!</h2>
             <p className="text-xl text-white mb-4">
-                Join #dockerize in the Hack Club Slack. If you aren't already in the Hack Club Slack, you can joint at <a href="https://hackclub.com/slack" target="_blank" className="text-[#f9a535] hover:underline">hackclub.com/slack</a>.
+                Join <a href="https://hackclub.slack.com/archives/C092D9HARSQ" target="_blank" className="text-[#f9a535] hover:underline">#dockerize</a> in the Hack Club Slack. If you aren't already in the Hack Club Slack, you can joint at <a href="https://hackclub.com/slack" target="_blank" className="text-[#f9a535] hover:underline">hackclub.com/slack</a>.
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">What does this guide cover?</h2>
             <p className="text-xl text-white mb-4">
