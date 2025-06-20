@@ -6,11 +6,12 @@ export default function MainPage() {
         <div className="flex items-center justify-center min-h-screen bg-[#f9a535]">
             <div className="flex flex-col ustify-ceneter bg-[#424241] p-8 w-[calc(75%)] my-10 rounded-lg shadow-lg">
                 <h1 className="text-6xl text-[#f9a535] text-center font-bold">Dockerize</h1>
-                <p className="text-2xl text-white text-center mt-4">You ship a self-hosted application using Docker, we ship you stickers and a change to win a ZimaBoard.</p>
+                <p className="text-2xl text-white text-center mt-4">A Hack Club YSWS where you ship a self-hosted application using Docker, we ship you stickers and a change to win a ZimaBoard.</p>
                 <div className="flex flex-row justify-center gap-2 mt-8">
                     <Link to="/guide" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">The Guide</Link>
-                    <Link to="/submit" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Submit Your Project</Link>
+                    <a href="https://forms.hackclub.com/dockerize" target="_blank" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Submit Your Project</a>
                     <a href="https://demo.nathanc.me" target="_blank" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Demo</a>
+                    <a href="https://github.com/Nathan5471/recipe-vault" target="_blank" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Demo GitHub</a>
                 </div>
                 <h2 className="text-4xl text-[#f9a535] text-left mt-8">How it works</h2>
                 <ol className="list-decimal list-inside text-2xl text-white mt-4">

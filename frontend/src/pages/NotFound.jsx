@@ -9,7 +9,7 @@ export default function NotFound() {
                 <div className="flex flex-row justify-center gap-2 mt-4">
                     <Link to="/" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Home</Link>
                     <Link to="/guide" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">The Guide</Link>
-                    <Link to="/submit" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Submit Your Project</Link>
+                    <a href="https://forms.hackclub.com/dockerize" target="_blank" className="bg-[#f9a535] text-white px-6 py-3 rounded-lg text-xl hover:bg-[#e08c2b] transition duration-300">Submit Your Project</a>
                 </div>
             </div>
         </div>

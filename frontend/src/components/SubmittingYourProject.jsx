@@ -40,7 +40,7 @@ services:
             </p>
             <h2 className="text-3xl text-[#f9a535] font-semibold mb-2">3. Submit your project</h2>
             <p className="text-xl text-white mb-4">
-                ADD SUBMISION INSTRUCTIONS HERE
+                All you have to do is fillout <a href="https://forms.hackclub.com/dockerize" target="_blank" className="text-[#f9a535] hover:underline">this form</a> with your project details. After that we will ship you some cool stickers. The top 3 projects based on DockerHub stars will also win a ZimaBoard that they can use as their home server.
             </p>
         </div>
     );
