@@ -31,7 +31,7 @@ export default function MainPage() {
                     <li>You should spend at least 1-2 hours on your project</li>
                 </ul>
                 <h2 className="text-4xl text-[#f9a535] text-left mt-8">Prizes</h2>
-                <p className="text-2xl text-white mt-4">Everyone who submits a project will get some cool stickers. The top 3 projects based on DockerHub stars will win a ZimaBoard as a home server.</p>
+                <p className="text-2xl text-white mt-4">Everyone who submits a project will get some cool stickers. The top 3 projects based on voting will win a ZimaBoard as a home server.</p>
                 <div className="text-2xl text-white mt-4 flex flex-row items-center justify-around">
                     <div className="text-center">
                         <h3 className="text-3xl text-[#f9a535]">ZimaBoard</h3>
