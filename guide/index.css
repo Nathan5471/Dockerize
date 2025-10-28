@@ -87,3 +87,20 @@ header {
   color: white;
   scale: 1.1;
 }
+
+.not-selected {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.not-selected h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.not-selected p {
+  font-size: 1.2rem;
+}
