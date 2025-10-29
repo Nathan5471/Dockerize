@@ -13,7 +13,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 10px;
   height: 100vh;
   width: 20%;
 }
@@ -110,17 +109,20 @@ header {
   justify-content: center;
   overflow-y: auto;
   height: 100vh;
+  width: 80%;
+  padding: 0px;
 }
 
 .guide-content {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .guide-content h2 {
   font-size: 2.5rem;
+  margin: 0;
   margin-bottom: 10px;
   color: #1d63ed;
   font-weight: bold;
@@ -128,6 +130,7 @@ header {
 
 .guide-content h3 {
   font-size: 2rem;
+  margin: 0;
   margin-bottom: 10px;
   color: #1d63ed;
   font-weight: bold;
@@ -135,6 +138,8 @@ header {
 
 .guide-content p {
   font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .guide-content a {
@@ -149,6 +154,6 @@ header {
 .guide-content::after {
   content: "";
   display: block;
-  height: 50px;
+  height: 20px;
   flex-shrink: 0;
 }
