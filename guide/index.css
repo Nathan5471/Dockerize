@@ -136,8 +136,16 @@ header {
   font-weight: bold;
 }
 
+.guide-content h4 {
+  font-size: 1.75rem;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #1d63ed;
+  font-weight: bold;
+}
+
 .guide-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
   margin-bottom: 25px;
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chatset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dockerize Guide</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img src="/public/dockerize-sticker.png" alt="Dockerize Sticker" />
+        <h1>Dockerize Guide</h1>
+      </div>
+      <div class="header-nav">
+        <a href="/guide/getting-started"><button>Getting Started</button></a>
+        <a href="/guide/building-your-app/"
+          ><button class="selected-button">Building Your App</button></a
+        >
+        <a href="/guide/docker-basics"><button>Docker Basics</button></a>
+        <a href="/guide/dockerfile-guide"><button>Dockerfile Guide</button></a>
+        <a href="/guide/final-steps"><button>Final Steps</button></a>
+      </div>
+      <div class="header-home">
+        <a href="/"><button>Back to Home</button></a>
+      </div>
+    </header>
+    <div class="guide-container">
+      <div class="guide-content">
+        <h2>Building Your App</h2>
+        <h3>The Frontend</h3>
+        <p>
+          The frontend is probably the most important part of your application.
+          It is the way people actually interact with your app. If your
+          interface sucks, people are not going to enjoy using your project.
+        </p>
+        <h4>Frameworks</h4>
+        <p>
+          Since your project will need to interact with your backend, I would
+          reccomend using a framework, rather than plain HTML and CSS. Some
+          popular frameworks are React and Vue for JavaScript.
+        </p>
+        <h3>The Backend</h3>
+        <p>
+          The backend is where a lot of the logic of your application will go.
+          For this guide it will also be serving your frontend, but it is also
+          possible and sometimes recommended to serve your frontend separately.
+          The backend is the connection between the frontend and the database.
+        </p>
+        <h4>Frameworks</h4>
+        <p>
+          There are lots of backend frameworks to choose from. Some popular ones
+          are Express for JavaScript and Django, Flask, or FastAPI for Python.
+          It is also recommended to document your API using something like
+          Swagger (OpenAPI).
+        </p>
+        <h3>The Database</h3>
+        <p>
+          The database is where all of your applications data is stored. There
+          are many options like SQLite, PostgreSQL, MongoDB, and more. SQLite
+          will be the easiest option since it is just a file and you don't have
+          to host a server for your database in addition to your backend. This
+          guide will show you how to set up SQLite or PostgreSQL with your app.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
