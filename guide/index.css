@@ -104,3 +104,51 @@ header {
 .not-selected p {
   font-size: 1.2rem;
 }
+
+.guide-container {
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.guide-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.guide-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1d63ed;
+  font-weight: bold;
+}
+
+.guide-content h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1d63ed;
+  font-weight: bold;
+}
+
+.guide-content p {
+  font-size: 1.2rem;
+}
+
+.guide-content a {
+  color: #1d63ed;
+  text-decoration: none;
+}
+
+.guide-content a:hover {
+  text-decoration: underline;
+}
+
+.guide-content::after {
+  content: "";
+  display: block;
+  height: 50px;
+  flex-shrink: 0;
+}
