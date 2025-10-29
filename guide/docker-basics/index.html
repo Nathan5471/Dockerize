@@ -27,5 +27,65 @@
         <a href="/"><button>Back to Home</button></a>
       </div>
     </header>
+    <div class="guide-container">
+      <div class="guide-content">
+        <h2>Docker Basics</h2>
+        <h3>What is Docker?</h3>
+        <p>
+          Docker is a platform that allows you to easily deploy your projects in
+          something called a container. A container is similar to a virtual
+          machine as it allows you to run your project in an isolated
+          replicatable environment. Where is differs from a virtual machine is
+          that it is much more lightweight and uses low-level mechanics of your
+          operating system. This makes it so much faster to deploy your
+          projects. It also gets rid of the "it works on my machine" problem
+          since the container will run the same way on any machine that has
+          Docker installed. If you want to learn more check out the
+          <a
+            href="https://docs.docker.com/get-started/docker-overview/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Docker documentation</a
+          >.
+        </p>
+        <h3>How can I run a Docker application?</h3>
+        <p>
+          The first step is to install Docker if you haven't already:
+          <a
+            href="https://docs.docker.com/get-started/get-docker/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://docs.docker.com/get-started/get-docker/</a
+          >. After that, there are two methods to run a Docker container: Docker
+          Compose and Docker Run.
+        </p>
+        <h4>Docker Compose (Highly recommended and far superior)</h4>
+        <p>
+          Docker Compose is a tool that allows you to define and run multiple or
+          multi-container Docker applications in a single .yaml file. In the
+          docker-compose.yaml file, you define your application with things like
+          the image to use, ports, environment variables, and more. After you
+          have defined your containers, you can run then all with the simple
+          command "docker-compose up" in the same directory as your
+          docker-compose.yaml file. You are also able to do "docker-compose up
+          -d" to run it in the background. There are many other helpful commands
+          like "docker-compose down" to stop and remove the containers and
+          "docker-compose pull" to update the images that the containers are
+          based off of.
+        </p>
+        <h4>Docker Run</h4>
+        <p>
+          The Docker Run command is an alternative to Docker Compose. It allows
+          to run a container in the command line with only a single command. To
+          set things like ports and environment variables, you use flags like
+          "-p" for ports and "-e" for environment variables. After setting up
+          lots of containers with Docker Run, it can get messy and much harder
+          to manage compared to Docker Compose. I also find it useful since
+          sometimes I need to edit something like the port and it's so much
+          quicker to just edit the file instead of trying to find the command I
+          used to run the container.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
