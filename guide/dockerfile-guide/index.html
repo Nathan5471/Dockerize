@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta chatset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dockerize Guide</title>
-    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="/guide/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-docker.min.js"></script>
   </head>
   <body>
     <header>
@@ -27,5 +33,85 @@
         <a href="/"><button>Back to Home</button></a>
       </div>
     </header>
+    <div class="guide-container">
+      <div class="guide-content">
+        <h2>Dockerfile Guide</h2>
+        <p>
+          Wow! You've already made your project and now it's time to deploy it
+          with Docker. This guide will focus on creating a Dockerfile for a
+          React and Express application using either SQLite or PostgreSQL as the
+          database. For more information check out the
+          <a
+            href="https://docs.docker.com/reference/dockerfile/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Docker docs</a
+          >
+          or ask in #dockerize on Slack.
+        </p>
+        <h3>What is a Dockerfile?</h3>
+        <p>
+          A Dockerfile is the set of instructions that Docker uses to build an
+          image for your applications. It allows you to specify a base image,
+          something like Node or Python, and then layer on top of that with your
+          application. This includes all the commands needed to run your app,
+          like installing dependencies, copying files, building, and exposing
+          ports.
+        </p>
+        <h3>Creating a Dockerfile</h3>
+        <p>
+          The first step is to create a file named "Dockerfile" with no file
+          extensions. This guide will give you a basic Dockerfile and explain it
+          line by line.
+        </p>
+        <h4>React + Express + SQLite</h4>
+        <pre><code class="language-docker">FROM node:22 AS frontend
+WORKDIR /app/frontend
+COPY frontend/package*.json ./
+RUN npm install
+COPY frontend/ ./
+RUN npm run build
+
+FROM node:22
+WORKDIR /app/backend
+COPY backend/package*.json ./
+RUN npm install
+COPY backend/ ./
+
+COPY --from=frontend /app/frontend/dist ./public
+RUN mkdir -p /data && chown -R node:node /data
+EXPOSE 3000
+CMD ["node", "index.js"]
+        </code></pre>
+        <pre><code class="language-docker">FROM node:22 AS frontend
+WORKDIR /app/frontend</code></pre>
+        <p>
+          These first two lines set the base image to Node.js and creates a
+          folder in the container to be used as the current directory. The "AS
+          frontend" is used to be able to reference this stage later.
+        </p>
+        <pre><code class="language-docker">COPY frontend/package*.json ./
+RUN npm install</code></pre>
+        <p>
+          These liens only copy the package.json files and installs the
+          dependencies. This is to take advantage of a feature Docker has where
+          it will cache each layer (line) of the Dockerfile. This way you only
+          install the npm packages if you change the package.json files.
+        </p>
+        <pre><code class="language-docker">COPY frontend/ ./
+RUN npm run build</code></pre>
+        <p>
+          This one is pretty straightforward, it copies the rest of the frontend
+          files and builds it.
+        </p>
+        <pre><code class="language-docker">COPY --from=frontend /app/frontend/dist ./public</code></pre>
+        <p>
+          I skipped ahead since the last few lines were similar to the first
+          few. This is where the "AS frontend" comes into player. It copies from
+          frontend output and puts it into the backend's public since we are
+          serving the frontend with Express.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

@@ -159,6 +159,11 @@ header {
   text-decoration: underline;
 }
 
+.guide-content pre {
+  overflow-x: auto;
+  flex-shrink: 0;
+}
+
 .guide-content::after {
   content: "";
   display: block;
